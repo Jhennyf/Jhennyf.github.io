@@ -1,0 +1,179 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+    <link rel="shortcut icon" href="imagens/transferir.png">
+
+</head>
+
+<body bgcolor="#CFCFCF">
+    <font color="#B52E31">
+        <center>
+            <img src="imagens/angular.png" alt="">
+        </center>
+        <h1>Bem-Vindo ao Manual sobre Angular</h1>
+    </font>
+    <p>Neste guia, você terá a oportunidade de explorar e mergulhar no mundo do desenvolvimento de aplicações web
+        modernas utilizando o poderoso framework Angular. Aqui, você encontrará informações abrangentes e passo a passo
+        para começar a construir interfaces de usuário interativas e dinâmicas, desde os conceitos fundamentais até
+        tópicos mais avançados.</p>
+
+         <a href="#rodapeum", name="um"><h2>Introdução sobre Angular</h2></a>
+         <a href="#rodapedois", name="dois"><h2>Versões</h2></a>
+         <a href="#rodapetres", name="tres"><h2>Instalação do Angular Cli</h2></a>
+         <a href="#rodapequatro", name="quatro"><h2>Verificação da Instalação do Angular Cli</h2></a>
+         <a href="#rodapecinco", name="cinco"><h2>Criando um projeto em Angular</h2></a>
+        <a href="#rodapeseis", name="seis"><h2>Executando Aplicações Angular</h2></a>
+ 
+
+    <font color="#B52E31"><h3>Introdução sobre Angular</h3></font>
+        <a name="rodapeum"></a>
+        Angular é um framework de desenvolvimento de aplicações web de código aberto, mantido pela equipe do Google e
+        uma comunidade ativa de desenvolvedores. Ele é amplamente utilizado para criar interfaces de usuário dinâmicas e
+        interativas, fornecendo ferramentas poderosas para a construção de aplicativos web modernos e escaláveis.
+        Lançado pela primeira vez em 2010 como "AngularJS" e depois reescrito como "Angular" a partir da versão 2, o
+        framework evoluiu para se tornar uma opção popular no desenvolvimento front-end. <br>
+        Uma das principais características do Angular é a abordagem baseada em componentes. Os aplicativos Angular são
+        construídos a partir de pequenas peças reutilizáveis chamadas de componentes, que encapsulam a lógica e a
+        apresentação de partes específicas da interface do usuário. Esses componentes podem ser combinados para formar
+        interfaces complexas e podem interagir uns com os outros de maneira bem definida. <br>
+        Outra característica fundamental do Angular é a vinculação de dados bidirecional. Isso significa que as mudanças
+        feitas nos dados do aplicativo são automaticamente refletidas na interface do usuário e vice-versa, tornando a
+        manipulação do estado do aplicativo mais simples e consistente. <br>
+        O Angular também possui um sistema robusto de injeção de dependências, o que facilita a organização e a
+        reutilização do código. Além disso, ele oferece suporte a roteamento, permitindo a criação de aplicativos de
+        página única (SPA) com transições suaves entre diferentes seções do aplicativo sem recarregar a página. <br>
+        O uso de TypeScript, uma linguagem superset do JavaScript, é uma característica integral do Angular. O
+        TypeScript traz recursos de tipagem estática e outras melhorias à linguagem JavaScript, ajudando os
+        desenvolvedores a detectar erros mais cedo e a escrever código mais seguro e legível. <br>
+        Em resumo, o Angular é um framework poderoso e abrangente para o desenvolvimento de aplicações web modernas. Com
+        sua arquitetura baseada em componentes, vinculação de dados bidirecional, injeção de dependências e outras
+        características avançadas, ele se tornou uma escolha popular entre os desenvolvedores que buscam criar
+        interfaces de usuário dinâmicas e eficientes. <br>
+        <center><img src="imagens/ang1.jpg", width="500"></center>
+        
+        <a href="#um">Voltar</a>
+    </p>
+
+    <font color="#B52E31"><h3>Versões</h3></font>
+        <a name="rodapedois"></a>
+        &#10112; AngularJS (1.x): A versão original do Angular, lançada em 2010. Foi um dos primeiros frameworks a
+        introduzir a ideia de vinculação de dados bidirecional e componentes reutilizáveis. O AngularJS usava JavaScript
+        puro e HTML. <br>
+        &#10113; Angular 2: Lançado em setembro de 2016, o Angular 2 foi uma reescrita completa do AngularJS, adotando
+        TypeScript como linguagem principal. Ele introduziu uma arquitetura baseada em componentes, vinculação de dados
+        bidirecional refinada e melhor desempenho geral. <br>
+        &#10114; Angular 4, 5, 6, 7, 8, 9 e 10: Essas versões subsequentes trouxeram melhorias contínuas, otimizações de
+        desempenho e novos recursos ao framework, incluindo melhorias no sistema de compilação, recursos aprimorados de
+        CLI (Interface de Linha de Comando) e suporte a Progressive Web Apps (PWAs). <br>
+        &#10115; Angular 11 e 12: Essas versões continuaram aprimorando a experiência do desenvolvedor, introduzindo
+        recursos como atualizações incrementais mais rápidas, melhorias na compilação e ajustes de desempenho. <br>
+        &#10116; Angular 13 (previsão): é provável que esta versão tenha introduzido mais aprimoramentos e recursos para
+        aprimorar ainda mais a experiência de desenvolvimento. <br>
+        <center><img src="imagens/ang2.jpg", width="500"></center>
+        <a href="#dois">Voltar</a>
+    </p>
+
+    <font color="#B52E31"><h3>Instalação do Angular Cli</h3></font>
+        <a name="rodapetres"></a>
+        Para instalar o Angular CLI (Command Line Interface), você precisa ter o Node.js e o npm (Node Package Manager)
+        instalados em seu sistema. O npm é um gerenciador de pacotes que permite instalar e gerenciar bibliotecas e
+        ferramentas, incluindo o Angular CLI. <br>
+        <i>Passo 1</i>: Instale o Node.js e o npm: <br>
+        Se você ainda não tem o Node.js instalado, você pode fazer o download e instalá-lo a partir do site oficial:
+        <a href="https://nodejs.org/">https://nodejs.org/</a> <br>
+        <i>Passo 2</i>: Instale o Angular CLI: <br>
+        Abra o seu terminal ou prompt de comando e execute o seguinte comando para instalar o Angular CLI globalmente em
+        seu sistema: <br>
+        <b>npm install -g @angular/cli</b> <br>
+        <i>Passo 3</i>: Verifique a instalação: <br>
+        Após a instalação, você pode verificar se o Angular CLI foi instalado corretamente executando o seguinte
+        comando: <br>
+        <b>ng --version</b> <br>
+        Com o Angular CLI instalado, você estará pronto para criar e gerenciar projetos Angular, bem como usar várias
+        ferramentas e comandos para desenvolvimento e compilação de aplicações Angular. Certifique-se de consultar a
+        documentação oficial do Angular CLI para aprender mais sobre seus recursos e como usá-los:
+        <a href="https://angular.io/cli">https://angular.io/cli</a> <br>
+        <center><img src="imagens/ang3.jpg", width="500"></center>
+        <a href="#tres">Voltar</a>
+    </p>
+
+    <font color="#B52E31"><h3>Verificação da Instalação do Angular Cli</h3></font>
+        <a name="rodapequatro"></a>
+        1<sub>1</sub> Abra o terminal ou prompt de comando no seu sistema operacional. <br>
+        1<sub>2</sub> Digite o seguinte comando e pressione Enter: <br>
+        <b>ng --version</b> <br>
+        2<sub>2</sub> Aguarde alguns segundos. O Angular CLI exibirá informações sobre a versão instalada, bem como
+        informações relacionadas ao Node.js e ao ambiente. <br>
+        Se a instalação estiver correta, você verá uma saída que se parece com isso: <br>
+        <b>
+            Angular CLI: x.x.x <br>
+            Node: x.x.x <br>
+            ... <br>
+        </b>
+        Onde "x.x.x" representa a versão atual do Angular CLI e do Node.js instalados no seu sistema. <br>
+        Se você não vir nenhuma mensagem de erro e receber uma saída similar à mencionada acima, isso indica que a
+        instalação do Angular CLI foi feita corretamente e você está pronto para começar a usar o Angular CLI para criar
+        e gerenciar projetos Angular. Caso contrário, verifique se você seguiu corretamente os passos de instalação e
+        certifique-se de ter o Node.js e o npm instalados na versão correta. <br>
+        <center><img src="imagens/ang4.jpg", width="500"></center>
+        <a href="#quatro">Voltar</a>
+    </p>
+
+    <font color="#B52E31"><h3>Criando um projeto em Angular</h3></font>
+        <a name="rodapecinco"></a>
+        Passo 1: Abra o Terminal ou Prompt de Comando:
+        Abra o terminal ou prompt de comando no seu sistema operacional. Certifique-se de que o Angular CLI foi
+        instalado corretamente, como mencionado anteriormente. <br>
+        Passo 2: Crie um Novo Projeto:
+        Execute o seguinte comando para criar um novo projeto em Angular. Substitua "nome-do-projeto" pelo nome que você
+        deseja dar ao seu projeto: <br>
+        <b>ng new nome-do-projeto</b> <br>
+        Passo 3: Configurar Opções do Projeto (Opcional):
+        O Angular CLI irá perguntar se você deseja adicionar algumas opções ao projeto, como roteamento, estilo CSS (ou
+        outras opções) e quais módulos de teste usar. Você pode selecionar as opções desejadas usando as teclas de seta
+        e a tecla Enter. Se você não tiver certeza, as opções padrão geralmente são boas para começar. <br>
+        Passo 4: Navegar para o Diretório do Projeto:
+        Depois que o projeto for criado, navegue para o diretório recém-criado usando o comando "cd": <br>
+        <b>cd nome-do-projeto</b> <br>
+        Passo 5: Iniciar o Servidor de Desenvolvimento:
+        Para iniciar o servidor de desenvolvimento e visualizar seu projeto, execute o seguinte comando: <br>
+        <b>ng serve</b> <br>
+        Isso irá compilar o projeto e iniciar um servidor de desenvolvimento. Você verá informações sobre a compilação
+        e, quando estiver pronto, poderá acessar o projeto em seu navegador usando o endereço http://localhost:4200/.
+        <br>
+        A partir desse ponto, você pode começar a editar os arquivos do seu projeto e ver as alterações refletidas
+        automaticamente no navegador enquanto o servidor de desenvolvimento estiver em execução. <br>
+        <center><img src="imagens/ang5.jpg", width="500"></center>
+        <a href="#cinco">Voltar</a>
+    </p>
+
+    <font color="#B52E31"><h3>Executando Aplicações Angular</h3></font>
+        <a name="rodapeseis"></a>
+        <b>Usando o Angular CLI</b><br>
+        Passo 1: Navegue para o diretório do seu projeto Angular no terminal: <br>
+        <b>cd nome-do-projeto</b> <br>
+        Passo 2: Inicie o servidor de desenvolvimento com o seguinte comando: <br>
+        <b>ng serve</b> <br>
+        Isso irá compilar o projeto e iniciar um servidor de desenvolvimento. Por padrão, ele será executado em
+        http://localhost:4200/. Abra um navegador e acesse essa URL para ver a sua aplicação em execução. <br>
+        <b>Configurando um servidor HTTP manualmente</b><br>
+        Passo 1: Navegue para o diretório do seu projeto Angular no terminal: <br>
+        <b>cd nome-do-projeto</b> <br>
+        Passo 2: Use o pacote http-server (ou outro pacote semelhante) para iniciar um servidor HTTP. Você pode
+        instalá-lo globalmente usando o npm: <br>
+        <b>npm install -g http-server</b>
+        Passo 3: Após a instalação, inicie o servidor no diretório dist (onde o Angular compila o código): <br>
+        <b>http-server dist</b><br>
+        Isso iniciará um servidor HTTP e você verá a saída no terminal com o endereço onde a aplicação está sendo
+        executada (por exemplo, http://localhost:8080). Abra um navegador e acesse esse endereço para ver a sua
+        aplicação. <br>
+        <center><img src="imagens/ang6.png", width="500"></center>
+        <a href="#seis">Voltar</a>
+
+    </p>
+
+</body>
+
+</html>
