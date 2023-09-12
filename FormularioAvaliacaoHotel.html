@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="hortcut icon" href="imagens/imagensFormulario/hotel.png">
+    <title>Formulário de Avaliação de Hotel</title>
+</head>
+<body bgcolor="#bfff7a">
+    <fieldset>
+        <font color="#2e4f0b", size="5", face="Papyrus"><legend>Formulário de Avaliação de Hotel</legend></font>
+        <fieldset >
+            <legend>&#10148; Informações da Estadia: </legend>
+            <p>
+                <label for="nome">Nome do Hóspede: </label>
+                <input type="text" id="Nome" name="Nome" autocomplete="off" maxlength="30" required>
+            </p>
+            <p>
+                <label for="nome">Data de Estadia: </label>
+                <input type="date" id="data" name="data" required>
+            </p>
+            <p>
+                <label for="nome">Número do Quarto </label>
+                <input type="text" id="Nome" name="Nome"  autocomplete="off" maxlength="2" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>&#10003; Serviço do Hotel: </legend>
+            <p>
+                Atendimento na Recepção: <br>
+                
+                <input type="radio" name="avalie1" value="0" checked>1
+                <input type="radio" name="avalie1" value="2" checked>2
+                <input type="radio" name="avalie1" value="3" checked>3
+                <input type="radio" name="avalie1" value="4" checked>4
+                <input type="radio" name="avalie1" value="5" checked>5
+            
+            </p>
+            <p>
+                Serviço de Quarto: <br>
+                
+                <input type="radio" name="avalie2" value="0" checked>1
+                <input type="radio" name="avalie2" value="2" checked>2
+                <input type="radio" name="avalie2" value="3" checked>3
+                <input type="radio" name="avalie2" value="4" checked>4
+                <input type="radio" name="avalie2" value="5" checked>5
+             
+            </p>
+
+            <p>
+                Serviço de Limpeza: <br>
+                
+                <input type="radio" name="avalie3" value="0" checked>1
+                <input type="radio" name="avalie3" value="2" checked>2
+                <input type="radio" name="avalie3" value="3" checked>3
+                <input type="radio" name="avalie3" value="4" checked>4
+                <input type="radio" name="avalie3" value="5" checked>5
+             
+            </p>
+              
+        </fieldset>
+        <fieldset>
+            <legend>&#10045;  Acomodações: </legend>
+            <p>
+                Conforto do Quarto: <br>
+                
+                <input type="radio" name="avalie4" value="0" checked>1
+                <input type="radio" name="avalie4" value="2" checked>2
+                <input type="radio" name="avalie4" value="3" checked>3
+                <input type="radio" name="avalie4" value="4" checked>4
+                <input type="radio" name="avalie4" value="5" checked>5
+            
+            </p>
+            <p>
+                Limpeza do Quarto: <br>
+                
+                <input type="radio" name="avalie5" value="0" checked>1
+                <input type="radio" name="avalie5" value="2" checked>2
+                <input type="radio" name="avalie5" value="3" checked>3
+                <input type="radio" name="avalie5" value="4" checked>4
+                <input type="radio" name="avalie5" value="5" checked>5
+             
+            </p>
+
+            <p>
+                Vista do Quarto: <br>
+                
+                <input type="radio" name="avalie6" value="0" checked>1
+                <input type="radio" name="avalie6" value="2" checked>2
+                <input type="radio" name="avalie6" value="3" checked>3
+                <input type="radio" name="avalie6" value="4" checked>4
+                <input type="radio" name="avalie6" value="5" checked>5
+             
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>&#10084; Alimentação: </legend>
+         
+            <p>
+                Qualidade das Refeições: <br>
+                
+                <input type="radio" name="avalie7" value="0" checked>1
+                <input type="radio" name="avalie7" value="2" checked>2
+                <input type="radio" name="avalie7" value="3" checked>3
+                <input type="radio" name="avalie7" value="4" checked>4
+                <input type="radio" name="avalie7" value="5" checked>5
+            
+            </p>
+            <p>
+                Variedade de Opções: <br>
+                
+                <input type="radio" name="avalie8" value="0" checked>1
+                <input type="radio" name="avalie8" value="2" checked>2
+                <input type="radio" name="avalie8" value="3" checked>3
+                <input type="radio" name="avalie8" value="4" checked>4
+                <input type="radio" name="avalie8" value="5" checked>5
+             
+            </p>
+
+            <p>
+                Serviço de Restaurante: <br>
+                
+                <input type="radio" name="avalie9" value="0" checked>1
+                <input type="radio" name="avalie9" value="2" checked>2
+                <input type="radio" name="avalie9" value="3" checked>3
+                <input type="radio" name="avalie9" value="4" checked>4
+                <input type="radio" name="avalie9" value="5" checked>5
+             
+            </p>
+
+        </fieldset>
+       
+        </fieldset>
+        <fieldset>
+            <legend>&#9993;Deixe um Comentários ou Sugestão:</legend>
+            <label for="mensagem"> Escreva um Comentário: </label><br>
+            <textarea type="text" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>&#9745; Probabilidade de Recomendar </legend>
+                <label for="name">Recomendarria? </label>
+                <select name="UF" name="Recomendar">
+                    <option value="">Selecione</option>
+                <option value="AC">Sim</option>
+                <option value="AL">Não</option>
+                <option value="AP">Talvez</option> 
+                </select>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>&#10026; Avaliação Geral</legend>
+            <p>
+                Avalie de 1 a 10: <br>
+                
+                <input type="radio" name="avalie4" value="0" checked>1
+                <input type="radio" name="avalie4" value="2" checked>2
+                <input type="radio" name="avalie4" value="3" checked>3
+                <input type="radio" name="avalie4" value="4" checked>4
+                <input type="radio" name="avalie4" value="5" checked>5
+                <input type="radio" name="avalie4" value="6" checked>6
+                <input type="radio" name="avalie4" value="7" checked>7
+                <input type="radio" name="avalie4" value="8" checked>8
+                <input type="radio" name="avalie4" value="9" checked>9
+                <input type="radio" name="avalie4" value="10" checked>10  
+            </p> 
+        </fieldset>
+
+        <form action="#" method="post">
+            <p align="center">
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Limpar" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

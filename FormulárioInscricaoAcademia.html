@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="hortcut icon" href="imagens/imagensFormulario/academia.png">
+    <title>Formulário de Inscrição de Academia</title>
+</head>
+<body bgcolor="#9ad6b7">
+    <fieldset>
+        <font color="#18228f", size="5", face="Courier New"><legend>Formulário de Inscrição de Academia</legend></font>
+        <fieldset>
+            <legend>&#9993; Informações Pessoais </legend>
+            <p>
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite" autocomplete="off" maxlength="40" required>  
+            </p> 
+            <p>
+                <label for="nome">Data de Nascimento: </label>
+                <input type="date" id="data" name="data" required>
+            </p>
+            <p>
+               Gênero: 
+               <label for="nome">Feminino</label>
+                <input type="radio" name="assunto" id="a" value="0" checked>
+                <label for="nome">Masculino</label>
+                <input type="radio" name="assunto" id="b" value="1" checked> 
+            </p>
+            <p>
+                <label for="nome">Endereço: </label>
+                <input type="text" id="Nome" name="Nome"  autocomplete="off" maxlength="40" required>  
+            </p>
+            <p>
+                <label for="nome">Número de Telefone: </label>
+                <input type="text" id="Nome" name="Nome" autocomplete="off" maxlength="10" required>  
+            </p>
+            <p>
+                <label for="nome">Email: </label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite seu Email" autocomplete="off" maxlength="30" required>  
+            </p>
+
+ 
+       </fieldset>
+       <fieldset>
+        <legend>&#9742; Informações de Emergência</legend>
+        <p>
+            <label for="nome">Nome do Contato de Emergência: </label>
+            <input type="text" id="Nome" name="Nome"  autocomplete="off" maxlength="10" required>  
+        </p>
+        <p>
+            <label for="nome">Número de Telefone do Contato de Emergência: </label>
+            <input type="text" id="Nome" name="Nome"  autocomplete="off" maxlength="30" required>  
+        </p>
+       </fieldset>
+       <fieldset>
+        <p>
+           <legend>&#9745;  Plano de Adesão: </legend>
+        Tipo de Plano: 
+        <input type="checkbox" name="avalie1" value="0">Mensal
+        <input type="checkbox" name="avalie1" value="2">Trimestral
+        <input type="checkbox" name="avalie1" value="3">Anual
+        </p>
+        <p>
+            <label for="nome">Data de Início Desejada: </label>
+            <input type="date1" id="data1" name="data1" required>
+        </p>
+       </fieldset>
+       <fieldset>
+        <legend>&#9998; Objetivos de Fitness: </legend>
+         <p>
+            <label for="mensagem"> Descreva seus objetivos de fitness: </label><br>
+            <textarea type="text" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required></textarea>
+         </p>
+         <p>
+            <label for="mensagem"> Descreva se já teve uma experiência prévia:: </label><br>
+            <textarea type="text" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required></textarea>
+         </p>
+         <p>
+            Nível de Experiência: 
+            <input type="checkbox" name="avalie2" value="0">Iniciante
+            <input type="checkbox" name="avalie2" value="2">Intermediário
+            <input type="checkbox" name="avalie2" value="3">Avançado
+         </p>
+       </fieldset>
+       <fieldset>
+        <legend>&#9684; Histórico Médico </legend>
+        Alguma condição médica que devemos estar cientes? (por exemplo, problemas cardíacos, lesões anteriores) <br>
+        <textarea type="text" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required></textarea>
+        <p>
+            <label for="arquivo">Possui Laudo Médico?</label> <br>
+            <input type="file" name="laudo" id="laudo"><br>
+        </p>     
+       </fieldset>
+
+       <form action="#" method="post">
+        <p align="center">
+            <input type="submit" name="Enviar" value="Enviar">
+            <input type="reset" name="Limpar" value="Limpar">
+        </p>
+    </form>
+
+    </fieldset>
+    
+</body>
+</html>

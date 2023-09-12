@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="hortcut icon" href="imagens/imagensFormulario/restaurante.png">
+    <title>Formulário de Avaliação de Restaurante</title>
+</head>
+<body bgcolor="#ebc934">
+    <fieldset>
+        <font color="#80702d", size="6", face="Courier New"><legend>Formulário Avaliação de Restaurante</legend></font>
+        <fieldset>
+            <legend>&#9728; Dados Pessoais</legend>
+            <p>
+                <label for="Nome">Nome: </label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" autocomplete="off" maxlength="30" required>
+            </p>
+            <p>
+                <label for="Numero">Numero de Celular: </label>
+                <input type="text" id="Numero" name="Numero" placeholder="Digite seu Numero" autocomplete="off" required>
+            </p>
+            <p>
+                <label for="nome">Data da Visita</label>
+                <input type="date" id="data" name="data" required>
+            </p>
+
+            <p>
+                <label for="Nome">Preferências Alimentares ou Restrições: </label><br>
+                <textarea type="text" name="mensagem" id="mensagem" rows="2" lows="3" placeholder="Digite aqui!" autocomplete="off" required></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>&#9998; Serviço e Comida</legend>
+            <p>
+                Rapidez do Atendimento?<br>
+                
+                <input type="radio" name="Atendimento" value="0" checked>Ótimo
+                <input type="radio" name="Atendimento" value="1" checked>Ruim 
+            </p>
+            <p>
+                Qualidade da Comida?<br>
+                
+                <input type="radio" name="Comida" value="0" checked>Ótimo 
+                <input type="radio" name="Comida" value="1" checked>Ruim 
+            </p>
+            <p>
+                Música Ambiente?<br>
+                
+                <input type="radio" name="Ambiente" value="0" checked>Ótimo 
+                <input type="radio" name="Ambiente" value="1" checked>Ruim 
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>&#10004; Avalie os Requisitos</legend>
+
+            <p>
+                <label for="name">Probabilidade de Recomendar: </label>
+                <select name="UF" name="Recomendar">
+                    <option value="">Selecione</option>
+                <option value="AC">Sim</option>
+                <option value="AL">Não</option>
+                <option value="AP">Talvez</option> 
+                </select>
+            </p>
+            <p>
+                <label for="name">Ofertas e Promoções: </label>
+                <select name="UF" name="Recomendar">
+                    <option value="">Selecione</option>
+                <option value="AC">Sim, quero receber</option>
+                <option value="AL">Não</option>
+                </select>   
+            </p>
+            <p>
+                <label for="Nome">Comentários e Sugestões: </label><br>
+                <textarea type="text" name="comente" id="comente" rows="2" lows="3" placeholder="Digite aqui!" autocomplete="off" required></textarea>
+            
+            </p>
+            <p>
+                <label for="name">Consentimento para Uso de Comentários: </label>
+                <select name="UF" name="Recomendar">
+                    <option value="">Selecione</option>
+                <option value="AC">Sim</option>
+                <option value="AL">Não</option>
+                </select>   
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>&#9321; Avaliação Geral</legend>
+                Avalie de 1 a 10<br>
+                
+                <input type="radio" name="avalie" value="0" checked>1
+                <input type="radio" name="avalie" value="2" checked>2
+                <input type="radio" name="avalie" value="3" checked>3
+                <input type="radio" name="avalie" value="4" checked>4
+                <input type="radio" name="avalie" value="5" checked>5
+                <input type="radio" name="avalie" value="6" checked>6
+                <input type="radio" name="avalie" value="7" checked>7
+                <input type="radio" name="avalie" value="8" checked>8
+                <input type="radio" name="avalie" value="9" checked>9
+                <input type="radio" name="avalie" value="10" checked>10
+            
+        </fieldset>
+        <form action="#" method="post">
+            <p align="center">
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Limpar" value="Limpar">
+
+            </p>
+        </form>
+    </fieldset>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="hortcut icon" href="imagens/imagensFormulario/SB.png">
+    <title>Formulário Salão de Beleza</title>
+</head>
+<body bgcolor="#f7a6d1">
+    <fieldset>
+        <font color="#4d1c36", size="6", face="Brush Script MT"><legend>Formulário Salão de Beleza</legend></font>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>&#10047; Dados Pessoais</legend>
+                <p>
+                    <label for="Nome">Nome: </label>
+                    <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" autocomplete="off" maxlength="30" required>
+                </p>
+                <p>
+                    <label for="Email">Email: </label>
+                    <input type="text" id="Email" name="Email" placeholder="Digite seu Email" autocomplete="off" required>
+                </p>
+                <p>
+                    <label for="Numero">Numero de Celular: </label>
+                    <input type="text" id="Numero" name="Numero" placeholder="Digite seu Numero" autocomplete="off" required>
+                </p>
+                <p>
+                    <label for="Endereco">Numero de Endereço: </label>
+                    <input type="text" id="Endereco" name="Endereco" placeholder="Digite seu Endereço" autocomplete="off" required>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>&#9985; Experiência</legend>
+                <p>
+                    Possui experiência com Cabelos?<br>
+                    
+                    <input type="radio" name="cabelo" value="0" checked>Sim 
+                    <input type="radio" name="cabelo" value="1" checked>Não 
+                </p>
+                <p>
+                    Possui experiência com Unhas?<br>
+                    
+                    <input type="radio" name="unhas" value="0" checked>Sim 
+                    <input type="radio" name="unhas" value="1" checked>Não 
+                </p>
+                <p>
+                    Possui experiência com Design de Sobrancelhas?<br>
+                    
+                    <input type="radio" name="Design" value="0" checked>Sim 
+                    <input type="radio" name="Design" value="1" checked>Não 
+                </p>
+            </fieldset>
+            <FIeldset>
+                <Legend>&#9786; Portifólio e Certificados</Legend>
+                <p>
+                    <label for="arquivo">Possui Portifólio?</label>
+                    <input type="file" name="Portifolio" id="Portifolio"><br>
+                </p>
+                <p>
+                    <label for="arquivo">Possui Certificados?</label>
+                    <input type="file" name="Certificado" id="Certificado"><br>
+                </p>
+            </FIeldset>
+            <fieldset>
+                <legend>&#10048; Deixe uma mensagem!</legend>
+                <label for="mensagem"> Escreva uma mensagem: </label><br>
+                <textarea type="text" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required></textarea>
+            </fieldset>
+                
+    </fieldset>
+           
+                <p align="center">
+                    <input type="submit" name="Enviar" value="Enviar">
+                    <input type="reset" name="Limpar" value="Limpar">
+
+                </p>
+            </fieldset>
+        </form> 
+   
+    
+</body>
+</html>

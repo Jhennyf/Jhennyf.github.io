@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="hortcut icon" href="imagens/imagensFormulario/escolar.png">
+    <title>Formulário de Avaliação de Desempenho Escolar</title>
+</head>
+<body bgcolor="#b2c8f7">
+    <fieldset>
+        <font color="#18228f", size="5", face="Georgia"><legend>Formulário de Avaliação de Desempenho Escolar</legend></font>
+        <fieldset>
+            <legend>&#9742; Dados do Aluno: </legend>
+            <p>
+                <label for="nome">Nome do Aluno: </label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite" autocomplete="off" maxlength="30" required>
+            </p>
+            <p>
+                <label for="nome">Data da Avaliação: </label>
+                <input type="date" id="data" name="data" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>&#9758; Desempenho Acadêmico: </legend>
+            <p>
+                Nota de Português: <br>
+                
+                <input type="radio" name="avalie1" value="0" checked>1
+                <input type="radio" name="avalie1" value="2" checked>2
+                <input type="radio" name="avalie1" value="3" checked>3
+                <input type="radio" name="avalie1" value="4" checked>4
+                <input type="radio" name="avalie1" value="5" checked>5
+                <input type="radio" name="avalie1" value="6" checked>6
+                <input type="radio" name="avalie1" value="7" checked>7
+                <input type="radio" name="avalie1" value="8" checked>8
+                <input type="radio" name="avalie1" value="9" checked>9
+                <input type="radio" name="avalie1" value="10" checked>10
+            </p>
+            <p>
+                Nota de Matemática: <br>
+                
+                <input type="radio" name="avalie2" value="0" checked>1
+                <input type="radio" name="avalie2" value="2" checked>2
+                <input type="radio" name="avalie2" value="3" checked>3
+                <input type="radio" name="avalie2" value="4" checked>4
+                <input type="radio" name="avalie2" value="5" checked>5
+                <input type="radio" name="avalie2" value="6" checked>6
+                <input type="radio" name="avalie2" value="7" checked>7
+                <input type="radio" name="avalie2" value="8" checked>8
+                <input type="radio" name="avalie2" value="9" checked>9
+                <input type="radio" name="avalie2" value="10" checked>10  
+            </p>
+
+            <p>
+                Nota de História: <br>
+                
+                <input type="radio" name="avalie3" value="0" checked>1
+                <input type="radio" name="avalie3" value="2" checked>2
+                <input type="radio" name="avalie3" value="3" checked>3
+                <input type="radio" name="avalie3" value="4" checked>4
+                <input type="radio" name="avalie3" value="5" checked>5
+                <input type="radio" name="avalie3" value="6" checked>6
+                <input type="radio" name="avalie3" value="7" checked>7
+                <input type="radio" name="avalie3" value="8" checked>8
+                <input type="radio" name="avalie3" value="9" checked>9
+                <input type="radio" name="avalie3" value="10" checked>10  
+            </p>
+            <p>
+                Nota de Geografia: <br>
+                
+                <input type="radio" name="avalie4" value="0" checked>1
+                <input type="radio" name="avalie4" value="2" checked>2
+                <input type="radio" name="avalie4" value="3" checked>3
+                <input type="radio" name="avalie4" value="4" checked>4
+                <input type="radio" name="avalie4" value="5" checked>5
+                <input type="radio" name="avalie4" value="6" checked>6
+                <input type="radio" name="avalie4" value="7" checked>7
+                <input type="radio" name="avalie4" value="8" checked>8
+                <input type="radio" name="avalie4" value="9" checked>9
+                <input type="radio" name="avalie4" value="10" checked>10  
+            </p>    
+        </fieldset>
+        <fieldset>
+            <legend>&#9733;Comportamento e Participação: </legend>
+            <p>
+                Nota de Participação: <br>
+                
+                <input type="radio" name="avalie5" value="0" checked>1
+                <input type="radio" name="avalie5" value="2" checked>2
+                <input type="radio" name="avalie5" value="3" checked>3
+                <input type="radio" name="avalie5" value="4" checked>4
+                <input type="radio" name="avalie5" value="5" checked>5 
+            </p>
+            <p>
+                Participação nas Atividades Escolares: <br>
+                
+                <input type="radio" name="avalie6" value="0" checked>1
+                <input type="radio" name="avalie6" value="2" checked>2
+                <input type="radio" name="avalie6" value="3" checked>3
+                <input type="radio" name="avalie6" value="4" checked>4
+                <input type="radio" name="avalie6" value="5" checked>5   
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>&#10048;Comentários do Professor:</legend>
+            <label for="mensagem"> Escreva um Comentário: </label><br>
+            <textarea type="text" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required></textarea>
+        </fieldset>
+        <form action="#" method="post">
+            <p align="center">
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Limpar" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
