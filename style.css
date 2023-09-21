@@ -1,0 +1,24 @@
+h1{
+    color: rgb(61, 106, 255);
+    font-family: cursive;
+    text-align: center;
+}
+
+body{
+    background-color: #c5e3ff;
+}
+
+p{
+    color: black;
+    font-family: Helvetica;
+    text-align: justify;
+}
+
+h2{
+    color: rgb(61, 106, 255);
+    font-family: cursive;
+}
+
+b{
+    font-family: cursive;
+}
