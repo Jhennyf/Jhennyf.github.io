@@ -5,7 +5,7 @@
 }
 body{
    
-    background-color: #DDBC95;
+    background-color: #e0b98a;
     font-family: GEORGIA;
 }
 
@@ -44,7 +44,7 @@ ul li{
     flex: 1;
 }
 
-menu>ul>li>a{
+menu>ul>li>.menu{
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -52,11 +52,65 @@ menu>ul>li>a{
     text-transform: uppercase;
     position: relative;
     left: 0;
-    color: aliceblue; /*Altera cor das letras do menu*/
+    color: rgb(191, 166, 129); /*Altera cor das letras do menu*/
 }
-img {
+
+.fundo {
     width: 100%;
-    height: 700px;
+    height: 250px;
     object-fit: cover;
     object-position: bottom;
   }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+.card{
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #a4602967;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px #050505;
+    flex-wrap: wrap;
+}
+
+.cafe1{
+    width: 150px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: rgb(79, 56, 32);
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+}
+
+.saibamais{
+    display: inline-block;
+    background-color: rgb(183, 143, 90);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #000000;
+}
+
+.scroll{
+    background-color: rgba(116, 87, 1, 0.637);
+    width: 100%;
+    height: 250px;
+}
