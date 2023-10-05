@@ -1,62 +1,202 @@
-*{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-}
-body{
-   
-    background-color: #DDBC95;
-    font-family: GEORGIA;
+body {
+    margin: 0;
+    background-color: rgb(222, 175, 113);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-header{
-    background-color: #662f03;
-    text-align: center;
+/*
+Define a margem do corpo do documento como 0, define a cor de fundo como um tom específico de laranja- marrom e especifica a família de fontes para 'Times New Roman' ou uma fonte serifada semelhante para todo o corpo do documento.
 
-}
-
-menu{
-    display: block;
-    text-align: center;
-}
-
-menu > ul{
+*/
+ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
 }
 
-ul{
-    text-align: justify;
-    margin-bottom: 10px;
-    text-indent: 20px;
-    margin-top: 0;
-    padding-bottom: 5px;
+/*
+Remove o estilo padrão de lista, define o preenchimento como 0 e esconde o conteúdo que transborda para elementos <ul> (listas não ordenadas). Também aplica um efeito de transição suave para todas as propriedades ao longo de 0,5 segundos.
+*/
+
+nav {
+    background-color: rgb(59, 31, 1);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+/*
+Estiliza a barra de navegação com um fundo marrom escuro, adiciona preenchimento horizontal, alinha os itens horizontalmente e exibe seus filhos em um contêiner flexível com espaço entre eles.
+*/
+
+h1,
+p {
+    color: white;
+}
+
+/*
+
+Define a cor do texto como branca para elementos <h1> (título 1) e <p> (parágrafo).*/
+
+li {
+    display: inline-block;
+    /* ou display: inline; */
+    padding: 0 20px;
+}
+
+/*Exibe os itens da lista horizontalmente (em linha) e adiciona espaçamento (preenchimento) horizontal aos itens da lista.*/
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    /*remover linha em baixo das palavras*/
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    display: none;
+}
+
+/*
+Estiliza botões como transparentes, sem borda, com texto branco e tamanho de fonte 36 pixels. Inicialmente, eles não são exibidos
+*/
+
+li:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(85, 49, 2, 0.497);
+    border-radius: 30px;
+}
+
+/*
+Quando um item da lista (<li>), um título (<h1>) ou um botão é hover, muda o cursor para apontador, diminui a opacidade para 0.8, aplica uma cor de fundo com transparência e bordas arredondadas.
+*/
+
+button:focus+ul {
+    height: 260px;
+}
+
+.fundo {
+    width: 100%;
+    height: 425px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* Define uma classe chamada .fundo com largura de 100%, altura de 425 pixels, usa object-fit: cover; para garantir que a imagem de fundo cubra completamente o elemento e object-position: bottom; para posicionar a imagem na parte inferior. */
+
+@media (max-width: 768px) {
+    button {
+        display: block;
+    }
+
+    ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    ul.visible {
+        height: auto;
+    }
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .fundo {
+        overflow: hidden;
+        display: none;
+        /* remove espaço que sobras após remover o fundo*/
+    }
+}
+
+/*
+se a tela for reduzida até 768 os compontes mudam de forma e seguem esas novas atulaizaçoes
+
+*/
+
+.container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: auto;
 }
 
-ul li{
-    list-style: none;
-    padding: 10px;
-    flex: 1;
-}
+/*
+Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizados horizontal e verticalmente e com quebra de linha automática.
+*/
 
-menu>ul>li>a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
+.card {
+    background-color: rgb(59, 31, 1);
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #7d5824;
+    padding: 20px;
     text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    left: 0;
-    color: aliceblue; /*Altera cor das letras do menu*/
+    box-shadow: 0 2px 4px #050505;
+    flex-wrap: wrap;
 }
-img {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
-    object-position: bottom;
-  }
+
+/*
+
+*/
+
+.cafe1 {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: rgb(197, 157, 115);
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+.saibamais {
+    display: inline-block;
+    background-color: #deb16edf;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*
+Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizados horizontal e verticalmente e com quebra de linha automática.*/
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #000000;
+}
+
+.video-container {
+    max-width: 100%;
+    /* Garante que o vídeo não ultrapasse a largura da tela */
+}
+
+/*Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizados horizontal e verticalmente e com quebra de linha automática.*/

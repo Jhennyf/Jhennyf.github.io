@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
+
+/*
+importa uma font escolhida no site de fonts do google
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 
+* é um seletor universal que seleciona todos os elementos do html
+padding Define o preechimento interno dos elementos
+margin define a margem
+border-box faz com que o tamanho total do elemento seja calculado  considerando contudo de outros atributos
+*/
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2ADD5; 
+}
+
+/*
+body estiliza todo o site como um todo
+widh em 100% deixa o ste ocupando 100% do espaço
+vh representa  aunidade relativa a altura da janela
+display flex define o modelo do layout
+justifi contente- center, centraliza os elementos ao longo do um eixo
+
+
+
+*/
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+/*
+ o .conteiner corresponde a uma div no html 
+ box-shandow adiciona uma sombra ao conteiner 
+*/
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEA8E8;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 31rem;
+}
+
+/*
+a div-imge é voltada a div que corresponde a imagem que aparece no site ao lado do 
+formulario 
+padding; Adiciona 1 rem de preenchimento 
+*/
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+/*
+form é destinado ao formulario do site 
+
+*/
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+ justify-content: space-between; é um modelo de layout flecivel ele posiciona os elementos
+*/
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/*
+content: '';diciona conteúdo ao elemento criado pelo seletor
+    display: faz com que o elemento seja tratato com um bloco
+    position: absolute; posiciona o elemento
+    border-radius: 10px; arredonda a borda
+
+*/
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/* 
+display: flex; modelo flexivel 
+    flex-wrap: wrap; permite um quebra de linha
+    justify-content: space-between; distribui espaço entre os itens
+    padding: 1rem 0;
+*/
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+/*
+   margin: 0.6rem 0; adiciona uma nova margem
+    border: none; remove borda de entrada
+    border-radius: 10px; adiciona um raio de borda
+    box-shadow: 1px 1px 6px #0000001c; adiciona sombra
+    font-size: 0.8rem;
+*/
+
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+/*
+    outline: 1px solid #6c63ff; adiciona um controno com cor
+
+*/
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/* define tamnaho*/
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/*
+    margin-right: 0.35rem; adiciona margens  a direita
+*/
+
+.continue-button input {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*
+    border: none; remove a borda do botão
+    border-radius: 5px; arredonda borda
+    cursor: pointer; define o curso como um indicador
+*/
+
+.continue-button input:hover {
+    background-color: #6b63fff1;
+}
+
+.continue-button input {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*
+text-decoration: none; remove decoração
+
+*/
