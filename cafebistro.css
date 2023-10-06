@@ -162,41 +162,19 @@ Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizad
     flex-wrap: wrap;
 }
 
-/*
-
-*/
-
-.cafe1 {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: rgb(197, 157, 115);
-    font-size: 24px;
-    margin-bottom: 10px;
-
-}
-
-.saibamais {
-    display: inline-block;
-    background-color: #deb16edf;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border-radius: 5px;
+menu>ul>li>a{
+    display: block;
+    padding: 10px;
     text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    left: 0;
+    color: aliceblue; /*Altera cor das letras do menu*/
 }
-
-/*
-Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizados horizontal e verticalmente e com quebra de linha automática.*/
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px #000000;
-}
-
-.video-container {
-    max-width: 100%;
-    /* Garante que o vídeo não ultrapasse a largura da tela */
-}
-
-/*Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizados horizontal e verticalmente e com quebra de linha automática.*/
+img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: bottom;
+  }
