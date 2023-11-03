@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(222, 175, 113);
+    background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -152,7 +152,7 @@ Estiliza um contêiner com posicionamento relativo, itens flexíveis centralizad
 */
 
 .card {
-    background-color: rgb(59, 31, 1);
+    background-color: rgb(128, 71, 9);
     width: 250px;
     margin: 20px;
     border: 1px solid #7d5824;
@@ -170,11 +170,11 @@ menu>ul>li>a{
     text-transform: uppercase;
     position: relative;
     left: 0;
-    color: aliceblue; /*Altera cor das letras do menu*/
+    color: rgb(255, 255, 255); /*Altera cor das letras do menu*/
 }
 img {
     width: 100%;
-    height: 700px;
+    height: 300px;
     object-fit: cover;
     object-position: bottom;
   }

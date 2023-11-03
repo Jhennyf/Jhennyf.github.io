@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: rgb(84, 205, 199);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav {
+    background-color: rgb(211, 254, 243);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+h1,
+p {
+    color: rgb(0, 0, 0);
+}
+
+li {
+    padding: 0 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    display: none;
+}
+
+li:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(118, 206, 220, 0.2);
+    border-radius: 30px;
+}
+
+button:focus + ul {
+    height: 260px;
+}
+
+@media (max-width: 768px) {
+    button {
+        display: block;
+    }
+
+    ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    ul.visible {
+        height: auto;
+    }
+
+    nav, ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+.container {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: auto;
+}
+
+.container .card {
+    margin: 20px;
+    width: 320px;
+    padding: 10px 30px;
+    background: #ebf5fc;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
+        6px 6px 20px rgb(0, 0, 0, 0.1)
+}
+
+.container .card:hover {
+    box-shadow: -6px -6px 20px rgb(255, 255, 255, 1),
+        6px 6px 20px rgb(0, 0, 0, 0.05);
+}
+
+.container .card .imgbox {
+    position: relative;
+    text-align: center;
+}
+
+.container .card .imgbox img {
+    max-width: 70%;
+}
+
+.container .card .contentbox {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container .card .contentbox h2 {
+    color: #136579;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.container .card .contentbox p {
+    text-align: justify;
+    color: #9eb9e3;
+}
+
+.container .card .contentbox a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #2e8dad;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: -4px -4px 10px rgb(151, 176, 213),
+        4px 4px 20px rgb(0, 0, 0, 0.1);
+}
+
+.container .card .contentbox a:hover {
+    box-shadow: inset -4px -4px 10px rgb(255, 255, 255),
+        inset 4px 4px 20px rgb(144, 147, 211);
+}
+
+.container .card a:hover span {
+    display: block;
+    transform: scale(0.98);
+}
+
+.container .card:hover .imgbox .container .card:hover .contentbox {
+    transform: scale(0.98);
+
+}

@@ -1,0 +1,45 @@
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    position: relative;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow: hidden;
+}
+
+.degrade {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(248, 188, 35), rgba(136, 235, 238, 0.6), #58a98d, rgb(2, 7, 82));
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.name h5 {
+    border: 1px solid white;
+    height: fit-content;
+    padding: 10px;
+}
