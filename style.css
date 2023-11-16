@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -107,8 +108,10 @@ article>p {
     margin-bottom: 10px;
     text-indent: 20px;
 }
+
+
 .contentbox h2{
- font-size: 30px;
+ font-size: 50px;
 }
 .container {
     margin: 20px;
@@ -155,7 +158,8 @@ article>p {
 .container .card .contentbox h2 {
     color: #30D1F8;
     font-weight: 700;
-    font-size: 1.4em;
+    font-size: 2em;
+    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
     text-align: left;
@@ -164,6 +168,7 @@ article>p {
 .container .card .contentbox p {
     text-align: justify;
     color: #110134;
+    font-size: 1.4em;
 }
 
 .container .card .contentbox a {
