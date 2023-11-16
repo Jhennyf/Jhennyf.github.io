@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: #cfa3c8;
+    background-color: rgb(34, 71, 135);
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -91,13 +91,14 @@ main {
     margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: #ffe7fa;
+    background-color: #ffffff;
 }
 
 article>h2 {
     color:  #30D1F8;
     padding-bottom: 20px;
     text-align: center;
+    font-size: 50px;
 }
 
 article>p {
@@ -106,7 +107,9 @@ article>p {
     margin-bottom: 10px;
     text-indent: 20px;
 }
-
+.contentbox h2{
+ font-size: 30px;
+}
 .container {
     margin: 20px;
     position: relative;
@@ -123,7 +126,7 @@ article>p {
     margin: 20px;
     width: 80%;
     padding: 10px 30px;
-    background: #ebf5fc;
+    background: #ffffff;
     border-radius: 40px;
     box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
         6px 6px 20px rgb(0, 0, 0, 0.1)
@@ -160,7 +163,7 @@ article>p {
 
 .container .card .contentbox p {
     text-align: justify;
-    color: #E16DFF;
+    color: #110134;
 }
 
 .container .card .contentbox a {
@@ -168,16 +171,16 @@ article>p {
     padding: 10px 20px;
     margin-top: 15px;
     border-radius: 40px;
-    color: #E16DFF;
+    color: #5c1db3;
     font-size: 16px;
     text-decoration: none;
-    box-shadow: -4px -4px 10px rgb(255, 205, 248),
+    box-shadow: -4px -4px 10px rgb(205, 205, 255),
         4px 4px 20px rgb(0, 0, 0, 0.1);
 }
 
 .container .card .contentbox a:hover {
     box-shadow: inset -4px -4px 10px rgb(255, 255, 255),
-        inset 4px 4px 20px rgb(255, 205, 248);
+        inset 4px 4px 20px rgb(208, 205, 255);
 }
 
 .container .card a:hover span {
