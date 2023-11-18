@@ -78,6 +78,96 @@ class MyMenu extends HTMLElement {
                     border-bottom: 4px solid #ffc506;
                     color: #ffc506;
                 }
+
+                
+@media(max-width: 768px) {
+    @media (max-width: 1200px) {
+        .content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 12%;
+            padding-left: 0px;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list-menu {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content.on {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, 0.8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+    }
+
+    .content.on .list-menu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content.on .list-menu li a {
+        font-size: 2rem;
+    }
+
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+
+}
+
             </style> 
 
             <slot>

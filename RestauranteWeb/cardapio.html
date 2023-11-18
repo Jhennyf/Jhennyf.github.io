@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="menu.js"></script>    
     <title>Cardápio</title>
 </head>
 
 <body>
 
-    <script src="menu.js"></script>
     <my-menu></my-menu>
 
+
+   
     <div class="intro">
         <div class="waviy">
             <span style="--i:1">C</span>
@@ -29,12 +31,19 @@
         </div>
 
     </div>
+ 
+    <div class="menu">
+        <button onclick="showCategory('hamburgers')">Hamburgers</button>
+        <button onclick="showCategory('pizzas')">Pizzas</button>
+        <button onclick="showCategory('drinks')">Bebidas</button>
+    </div>
 
-
+    <!-- HAMBURGUUER -->
+    <div id="hamburgers" class="category active">
     <section class="cardapio" id="cardapio">
         <div class="itens-cardapio">
             <div class="hamburguer-1">
-                <img src="imagens/cardapio/1.png" alt="">
+                <img src="imagens/cardapio/hamburguer/1.png" alt="">
                 <div class="info">
                     <h3>Goiano Gold Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -44,7 +53,7 @@
                 </div>
             </div>
             <div class="hamburguer-2">
-                <img src="imagens/cardapio/2.png" alt="">
+                <img src="imagens/cardapio/hamburguer/2.png" alt="">
                 <div class="info">
                     <h3>Cerrado Saboroso Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -54,7 +63,7 @@
                 </div>
             </div>
             <div class="hamburguer-3">
-                <img src="imagens/cardapio/3.png" alt="">
+                <img src="imagens/cardapio/hamburguer/3.png" alt="">
                 <div class="info">
                     <h3>Queijo Quente do Sertão</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -64,7 +73,7 @@
                 </div>
             </div>
             <div class="hamburguer-4">
-                <img src="imagens/cardapio/4.png" alt="">
+                <img src="imagens/cardapio/hamburguer/4.png" alt="">
                 <div class="info">
                     <h3>Picanha Pantaneira Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -74,7 +83,7 @@
                 </div>
             </div>
             <div class="hamburguer-5">
-                <img src="imagens/cardapio/5.png" alt="">
+                <img src="imagens/cardapio/hamburguer/5.png" alt="">
                 <div class="info">
                     <h3>Jalapeño Jalapão Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -84,7 +93,7 @@
                 </div>
             </div>
             <div class="hamburguer-6">
-                <img src="imagens/cardapio/6.png" alt="">
+                <img src="imagens/cardapio/hamburguer/6.png" alt="">
                 <div class="info">
                     <h3>Pequi Passion Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -94,7 +103,7 @@
                 </div>
             </div>
             <div class="hamburguer-7">
-                <img src="imagens/cardapio/7.png" alt="">
+                <img src="imagens/cardapio/hamburguer/7.png" alt="">
                 <div class="info">
                     <h3>Milho Verde Delight Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -104,7 +113,7 @@
                 </div>
             </div>
             <div class="hamburguer-8">
-                <img src="imagens/cardapio/8.png" alt="">
+                <img src="imagens/cardapio/hamburguer/8.png" alt="">
                 <div class="info">
                     <h3>Sertanejo Supremo Burguer</h3>
                     <h4>Individual <span>R$30,00</span></h4>
@@ -115,8 +124,210 @@
             </div>
         </div>
     </section>
+</div>
+
+    <!--PIZZAS-->
+
+
+    <div id="pizzas" class="category">
+    <section class="cardapio" id="cardapio">
+        <div class="itens-cardapio">
+            <div class="pizza-1">
+                <img src="imagens/cardapio/pizzas/1.png" alt="">
+                <div class="info">
+                    <h3>Goiás Supreme</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-2">
+                <img src="imagens/cardapio/pizzas/2.png" alt="">
+                <div class="info">
+                    <h3>Cerrado Delight</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-3">
+                <img src="imagens/cardapio/pizzas/3.png" alt="">
+                <div class="info">
+                    <h3>Pizzazz do Planalto</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$36,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-4">
+                <img src="imagens/cardapio/pizzas/4.png" alt="">
+                <div class="info">
+                    <h3>Queijo Quente Goiano</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-5">
+                <img src="imagens/cardapio/pizzas/5.png" alt="">
+                <div class="info">
+                    <h3>Rodeio de Sabores</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-6">
+                <img src="imagens/cardapio/pizzas/6.png" alt="">
+                <div class="info">
+                    <h3>Verde Vivo Pizza</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-7">
+                <img src="imagens/cardapio/pizzas/7.png" alt="">
+                <div class="info">
+                    <h3>Sertão Saboroso</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+            <div class="pizza-8">
+                <img src="imagens/cardapio/pizzas/8.png" alt="">
+                <div class="info">
+                    <h3>Chapadão Crocante</h3>
+                    <h4>pequena <span>R$30,00</span></h4>
+                    <h4>média <span>R$136,90</span></h4>
+                    <h4>grande <span>R$155,00</span></h4>
+                    <button class="pedir">Pedir agora</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    </div>
+
+
+    <!--BEBIDAS-->
+
+    <div id="drinks" class="category">
+        <section class="cardapio" id="cardapio">
+            <div class="itens-cardapio">
+                <div class="bebida-1">
+                    <img src="imagens/cardapio/bebidas/1.png" alt="">
+                    <div class="info">
+                        <h3>Suco de Laranja</h3>
+                        <h4>pequeno <span>R$3,00</span></h4>
+                        <h4>médio <span>R$6,90</span></h4>
+                        <h4>grande <span>R$15,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-2">
+                    <img src="imagens/cardapio/bebidas/2.png" alt="">
+                    <div class="info">
+                        <h3>Limonada</h3>
+                        <h4>pequena <span>R$3,00</span></h4>
+                        <h4>médio <span>R$6,90</span></h4>
+                        <h4>grande <span>R$15,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-3">
+                    <img src="imagens/cardapio/bebidas/3.png">
+                    <div class="info">
+                        <h3>Frutas vermelhas do Cerrado</h3>
+                        <h4>pequena <span>R$3,00</span></h4>
+                        <h4>média <span>R$6,90</span></h4>
+                        <h4>grande <span>R$15,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-4">
+                    <img src="imagens/cardapio/bebidas/4.png" alt="">
+                    <div class="info">
+                        <h3>Coca-cola</h3>
+                        <h4>pequena <span>R$3,00</span></h4>
+                        <h4>média <span>R$6,90</span></h4>
+                        <h4>grande <span>R$15,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-5">
+                    <img src="imagens/cardapio/bebidas/5.png" alt="">
+                    <div class="info">
+                        <h3>Rodeio de Sabores</h3>
+                        <h4>pequena <span>R$30,00</span></h4>
+                        <h4>média <span>R$136,90</span></h4>
+                        <h4>grande <span>R$155,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-6">
+                    <img src="imagens/cardapio/bebidas/6.png" alt="">
+                    <div class="info">
+                        <h3>Verde Vivo</h3>
+                        <h4>pequena <span>R$3,00</span></h4>
+                        <h4>média <span>R$6,90</span></h4>
+                        <h4>grande <span>R$15,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-7">
+                    <img src="imagens/cardapio/bebidas/7.png" alt="">
+                    <div class="info">
+                        <h3>Sertão Saboroso</h3>
+                        <h4>pequena <span>R$3,00</span></h4>
+                        <h4>média <span>R$16,90</span></h4>
+                        <h4>grande <span>R$55,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+                <div class="bebida-8">
+                    <img src="imagens/cardapio/bebidas/8.png" alt="">
+                    <div class="info">
+                        <h3>Chapadão Crocante</h3>
+                        <h4>pequena <span>R$3,00</span></h4>
+                        <h4>média <span>R$6,90</span></h4>
+                        <h4>grande <span>R$15,00</span></h4>
+                        <button class="pedir">Pedir agora</button>
+                    </div>
+                </div>
+            
+        </section>    
+</div>
+
+
+
+<script>
+    function showCategory(category) {
+        // Esconder todas as categorias
+        var categories = document.getElementsByClassName('category');
+        for (var i = 0; i < categories.length; i++) {
+            categories[i].classList.remove('active');
+        }
+
+        // Mostrar a categoria selecionada
+        document.getElementById(category.toLowerCase()).classList.add('active');
+    }
+</script>
+
+
 
 
 </body>
+
+
 
 </html>

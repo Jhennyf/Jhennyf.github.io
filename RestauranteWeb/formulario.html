@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="menu.js"></script>
+    <title>Contato</title>
+</head>
+
+<body>
+    <my-menu></my-menu>
+
+
+    <section class="first-section" id="home">
+        <div class="conteudo-principal">
+        </div>
+
+        
+    <div>
+        <h1 id="titulo">Avaliação do Cliente Hamburgueria</h1>
+                <br />
+      </div>
+  
+      <div id="fundo-branco">
+        <form>
+          <fieldset class="grupo">
+            <div class="campo">
+              <label for="nome"><strong>Nome</strong></label>
+              <input type="text" name="nome" id="nome" required />
+            </div>
+  
+            <div class="campo">
+              <label for="sobrenome"><strong>Sobrenome</strong></label>
+              <input type="text" name="sobrenome" id="sobrenome" required />
+            </div>
+          </fieldset>
+  
+          <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required />
+          </div>
+  
+          <div class="campo">
+            <label
+              ><strong>Qual foi a sua escolha?</strong></label
+            >
+            <label>
+              <input type="radio" name="devweb" value="hamburguer" checked />Hamburguer
+            </label>
+  
+            <label>
+              <input type="radio" name="devweb" value="pizza" />Pizza
+            </label>
+  
+            <label>
+              <input type="radio" name="devweb" value="Drinks" />Drinks
+            </label>
+          </div>
+  
+         
+  
+          <div class="campo">
+            <br />
+            <label><strong>Conte um pouco da sua experiência:</strong></label>
+            <textarea row="6" id="experiencia" name="experiencia"></textarea>
+          </div>
+  
+          <button type="submit" class="botao">Concluído</button>
+        </form>
+      </div>
+    </section>
+
+</body>
+
+</html>

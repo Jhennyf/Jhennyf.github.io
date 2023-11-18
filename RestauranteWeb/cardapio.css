@@ -1,4 +1,8 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;400&family=Rye&display=swap');
+
 
 * {
   margin: 0;
@@ -7,8 +11,9 @@
   list-style: none;
   border: none;
   text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
-
 
 html {
   width: 100vw;
@@ -17,6 +22,8 @@ html {
   overflow-x: hidden;
   background-color: #1f1e1f;
 }
+
+
 
 
 .intro {
@@ -36,6 +43,9 @@ html {
 
 
 .waviy {
+  position: relative;
+  z-index: 1; /* Adicionando z-index */
+  overflow: hidden; /* Adicionando overflow:hidden */
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
   font-family: 'Rye', serif;
 }
@@ -52,19 +62,49 @@ html {
 }
 
 @keyframes waviy {
-
-  0%,
-  40%,
-  100% {
-    transform: translateY(0)
+  0%, 100% {
+    transform: translateY(0);
   }
-
-  20% {
-    transform: translateY(-20px)
+  50% {
+    transform: translateY(-20px); /* Ou outro valor apropriado */
   }
 }
 
 
+
+
+
+/*opçôes*/
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+ 
+}
+
+.menu button{
+  font-family: 'Rye', serif;
+  font-size: 3rem;
+  width: 230px;
+  height: 60px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+}
+
+.category {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+
+/*cardapio*/
 .cardapio {
   width: 100vw;
   display: flex;
@@ -153,4 +193,95 @@ html {
 .itens-cardapio .info .pedir:hover {
   background-color: #1f1e1f;
   color: white;
+}
+
+
+
+
+
+@media(max-width: 768px) {
+
+
+  
+.menu {
+  margin: 5px;
+ 
+}
+
+.menu button{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.waviy span {
+  display: inline-block;
+  font-size: 5rem;
+  color: #fff;
+
+}
+
+
+  .itens-cardapio .info h4 {
+      margin-left: 12rem;
+  }
+
+}
+
+@media(max-width: 600px) {
+
+  .itens-cardapio {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+      align-items: center;
+  }
+}
+
+
+
+@media(max-width: 395px) {
+
+
+  .itens-cardapio {
+      width: 50%;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+  }
+
+  .itens-cardapio img {
+      width: 80%;
+      height: auto;
+  }
+
+  .itens-cardapio div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .itens-cardapio .info {
+      width: 100%;
+      height: 150px;
+  }
+
+  .itens-cardapio .info h3 {
+      grid-template-columns: 93px 150px;
+      font-size: 1.3rem;
+  }
+
+  .itens-cardapio .info h4 {
+      width: 50%;
+      grid-template-columns: 90px 100px;
+      font-size: 1rem;
+      margin-left: 5px;
+  }
+
+  .itens-cardapio .info .pedir {
+      width: 100%;
+      font-size: 1.5rem;
+  }
+
 }
