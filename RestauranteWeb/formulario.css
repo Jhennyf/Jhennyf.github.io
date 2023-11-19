@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;400&family=Rye&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +10,7 @@
     list-style: none;
     border: none;
     text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Inter', sans-serif;
+   
 }
 
 html {
@@ -53,10 +51,7 @@ html {
     text-align: center;
     margin-top: 5rem;
     font-size: 3rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Bungee', sans-serif;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Rye', serif;
+    
 }
 
 fieldset {
@@ -64,7 +59,10 @@ fieldset {
 }
 
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
     border-radius: 5px;
 }
 
@@ -87,7 +85,10 @@ fieldset.grupo .campo {
 
 
 
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
     padding: 0.2em;
     border: 1px solid #9d8842;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -103,7 +104,9 @@ textarea {
     padding-right: 1em;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
     background-color: #ffffff;
 }
 
@@ -132,7 +135,7 @@ textarea {
 }
 
 #fundo-branco {
-    background:rgba(0, 0, 0, 0.716);
+    background: rgba(0, 0, 0, 0.716);
     display: inline-block;
     padding: 50px;
     border-radius: 10px;
@@ -143,66 +146,68 @@ input[type="radio"] {
 
 }
 
-@media(max-width: 768px){
- 
-.campo {
-    margin-bottom: 2em;
-    margin-left: 6em;
-    align-items: center;
-}
+@media(max-width: 768px) {
 
-.campo label {
-    font-size: 10px;
-    margin-bottom: 0.2em; 
-}
+    .campo {
+        margin-bottom: 2em;
+        margin-left: 6em;
+        align-items: center;
+    }
 
-textarea {
-    width: 80%;
-    height: 50px;
-    right: 50px;
-    align-items: center;
-}
+    .campo label {
+        font-size: 10px;
+        margin-bottom: 0.2em;
+    }
 
-.campo select option {
-    padding-right: 1em;
-}
+    textarea {
+        width: 80%;
+        height: 50px;
+        right: 50px;
+        align-items: center;
+    }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background-color: #ffffff;
-}
+    .campo select option {
+        padding-right: 1em;
+    }
 
-.botao {
-    font-size: 1.2em;
-    background: #ffc506;
-    border: 0;
-    margin-bottom: 1em;
-    color: white;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    margin: auto;
-    display: block;
-    margin-top: 40px;
-}
+    .campo input:focus,
+    .campo select:focus,
+    .campo textarea:focus {
+        background-color: #ffffff;
+    }
 
-.botao:hover {
-    background: #fffdbb;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
-    text-shadow: none;
-}
+    .botao {
+        font-size: 1.2em;
+        background: #ffc506;
+        border: 0;
+        margin-bottom: 1em;
+        color: white;
+        padding: 0.2em 0.6em;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        margin: auto;
+        display: block;
+        margin-top: 40px;
+    }
 
-#check {
-    display: inline-block;
-}
+    .botao:hover {
+        background: #fffdbb;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+        text-shadow: none;
+    }
 
-#fundo-branco {
-    background:rgba(0, 0, 0, 0.716);
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
-    padding-bottom: 20px;
-}
+    #check {
+        display: inline-block;
+    }
+
+    #fundo-branco {
+        background: rgba(0, 0, 0, 0.716);
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        padding-bottom: 20px;
+    }
 
 
 }

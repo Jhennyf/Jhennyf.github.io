@@ -13,28 +13,8 @@
 <body>
     <script src="menu.js"></script>
 
-    <header class="content">
-        <div class="logo">
-            <img src="imagens/logos/logoHambuguer.png" alt="">
-            <h3>BurguerUAI</h3>
-        </div>
-        <nav>
-            <ul class="list-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#sobrenos">Sobre Nós</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contatos</a></li>
-                <li><a href="formulario.html">feedback</a></li>
-            </ul>
-        </nav>
-
-        <div class="menu-toggle">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-        </div>
-    </header>
-
+   <my-menu></my-menu>
+   
     <section class="first-section" id="home">
         <div class="conteudo-principal">
             <h1>Deixe seu dia mais saboroso</h1>
@@ -78,7 +58,7 @@
             </div>
         </div>
         <div class="promo">
-            <h2>melhor opção de Combo</h2>
+            <h2>opção de Combo</h2>
             <div class="btn">
                 <button>Aproveitar</button>
             </div>
@@ -119,32 +99,8 @@
     </section>
 
 
-<!--
-
-
-    <section class="contatos" id="contatos">
-        <h3>Contatos</h3>
-        <div class="contato-secao">
-            <div>
-                <i class="bi bi-telephone"></i>
-                <span>(41) 93455-7777</span>
-            </div>
-            <div>
-                <i class="bi bi-instagram"></i>
-                <span>Jhenny.Grota</span>
-            </div>
-            <div>
-                <i class="bi bi-facebook"></i>
-                <span>Jhennyf Lima</span>
-            </div>
-        </div>
-    </section>
--->
-    
-
     <!-- Site footer -->
     <footer class="site-footer">
-       
         <div class="container">
             <div class="row">
                 <div class="text-footer">
@@ -163,7 +119,18 @@
         </div>
     </footer>
 
+<script>
+    let show = true;
+    const menuContent = document.querySelector('.content');
+    const menuToggle = menuContent.querySelector('.menu-toggle');
 
+    menuToggle.addEventListener('click', () => {
+    
+    
+    menuContent.classList.toggle('on', show);
+    show = !show;
+    });
+</script>
 
 </body>
 

@@ -7,194 +7,196 @@ class MyMenu extends HTMLElement {
 
     connectedCallback() {
         const template = `
+
             <style>
-                @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css');
-                    
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    list-style: none;
-                    border: none;
-                    text-decoration: none;
-                    font-family: 'Bebas Neue', sans-serif;
-                    font-family: 'Inter', sans-serif;
-                }
 
-                html {
-                    width: 100vw;
-                    height: 100vh;
-                    font-size: 62.5%;
-                    overflow-x: hidden;
-                    background-color: #1f1e1f;
-                }
-                .content {
-                    width: 100vw;
-                    height: 70px;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    background-color: #1f1e1f;
-                    position: fixed;
-                    padding-left: 30rem;
-                }
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;400&family=Rye&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css');
 
-                .logo {
-                    width: 70px;
-                    height: auto;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                }
-
-                .logo h3 {
-                    color: white;
-                    font-size: 1.6rem;
-                }
-
-                .logo img {
-                    width: 100%;
-                    height: 100%;
-                }
-
-                .content .list-menu {
-                    width: 600px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-
-                .content .list-menu li a {
-                    padding: 3rem 1rem 2rem 1rem;
-                    color: white;
-                    font-size: 1.8rem;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    transition: all 200ms ease-in;
-                }
-
-                .content .list-menu li a:hover {
-                    background-color: #3333;
-                    border-bottom: 4px solid #ffc506;
-                    color: #ffc506;
-                }
-
-                
-@media(max-width: 768px) {
-    @media (max-width: 1200px) {
-        .content {
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            border: none;
+            text-decoration: none;
+            font-family: 'Bebas Neue', sans-serif;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        html {
+            width: 100vw;
+            height: 100vh;
+            font-size: 62.5%;
+            overflow-x: hidden;
+            background-color: #1f1e1f;
+        }
+        
+        .nav {
+            position: fixed;
+            align-items: center;
+            padding-left: 20rem;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            height: 70px;
+            background-color: #1f1e1f;
+            padding-rigth: 50px;
+        }
+        
+        .nav__toggle {
+          position: fixed;
+            cursor: pointer;
+            margin: 0rem 1rem;
+            right: 0;
+        }
+        
+        .close,
+        input[type="checkbox"] {
+            display: none;
+        }
+        
+        .hamburger {
+            margin-top: 0.2rem;
+        }
+        
+        .nav__menu {
+            display: flex;
             flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            margin: 1rem;
+            padding-right: 40px;
+            
+        }
+  
+        li {
+            list-style: none;
+            display: none;
+            text-transform: uppercase;
+
+        }
+        
+        li:first-child {
+            margin-right: auto;
+            display: block;
+        }
+        
+        .nav__menu a {
+            text-decoration: none;
+            color: initial;
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+        }
+        
+        #item-menu:hover {
+            color: #ffc506;
+        }
+        
+        #nav__checkbox:checked~ul.nav__menu li {
+            display: block;
+        }
+        
+        #nav__checkbox:checked~label.nav__toggle .hamburger {
+            display: none;
+        }
+        
+        #nav__checkbox:checked~label.nav__toggle .close {
+            display: block;
+        }
+        
+        @media only screen and (min-width: 1200px) {
+          .main{
+            display:block;
+          }
+          html {
+            font-size: 45%;
+        }
+        
+            .nav__toggle {
+                display: none;
+            }
+        
+            .nav__menu {
+                flex-direction: row;
+            }
+        
+            .nav__menu li {
+                display: block;
+            }
+        
+            .menu-item {
+                padding-right: 50px;
+            }
+        
+            .imglogo {
+                height: unset;
+                height: 100px;
+            }
+        
+            .imglogo {
+                height: 52px;
+            }
+        }
+        
+        @media only screen and (max-width: 1080px) {
+          .main{
+            display:block;
+          }
+          .nav__menu{
+            background-color:  #1f1e1f;;
+            z-index: 10;
+            display: flex;
             justify-content: center;
             align-items: center;
-            height: 12%;
-            padding-left: 0px;
+          }
+            .nav__menu a {
+                font-size: 2rem;
+                color: rgb(255, 255, 255);
+            }
+        
+            .imglogo {
+                height: 50px;
+                padding-left: 0px;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+        
+            .hamburger,
+            .close {
+                height: 30px;
+            }
         }
-    }
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 40px;
-    }
-
-    .content .list-menu {
-        display: none;
-    }
-
-    .one,
-    .two,
-    .three {
-        width: 80%;
-        height: 2px;
-        background-color: white;
-        margin: 6px auto;
-        transition-duration: 0.5s;
-    }
-
-    .menu-toggle {
-        width: 30px;
-        height: 30px;
-    }
-
-    .content.on {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(30, 31, 30, 0.8);
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content.on .logo {
-        display: none;
-    }
-
-    .content.on .menu-toggle {
-        position: absolute;
-        right: 40px;
-        top: 20px;
-    }
-
-    .content.on .list-menu {
-        display: block;
-    }
-
-    .content.on .list-menu li {
-        display: flex;
-        justify-content: center;
-    }
-
-    .content.on .list-menu li a {
-        font-size: 2rem;
-    }
-
-    .content.on .menu-toggle .two {
-        opacity: 0;
-    }
-
-    .content.on .menu-toggle .one {
-        transform: rotate(45deg) translate(5px, -8px);
-    }
-
-    .content.on .menu-toggle .three {
-        transform: rotate(-45deg) translate(20px, -6px);
-    }
-
-
-}
-
             </style> 
 
             <slot>
-            <header class="content">
-            <div class="logo">
-                <img src="imagens/logos/logoHambuguer.png" alt="">
-                <h3>BurguerUAI</h3>
-            </div>
-            <nav>
-                <ul class="list-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#sobrenos">Sobre Nós</a></li>
-                    <li><a href="#cardapio">Cardápio</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                    <li><a href="https://www.instagram.com/burgeruai/"><i class="bi bi-instagram"></i></a></i></li>
-                    <li><a href="https://www.facebook.com/uaiburguer.br/"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#"><i class="bi bi-cart-dash"></i></a></li>
-                </ul>
-            </nav>
-    
-            <div class="menu-toggle">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </div>
-        </header>
-            </slot>
+            <nav class="nav">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+              <img src="imagens/logos/1.png" class="hamburger" />
+              <img src="imagens/logos/2.png" class="close" />
+            </label>
+        
+            <ul class="nav__menu">
+        
+              <li>
+                <a href="index.html">
+                  <img class="imglogo" src="imagens/logos/Logomarca.png" /> </a>
+              </li>
+        
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#sobrenos">Sobre Nós</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="contato.html">Contatos</a></li>
+              <li><a href="formulario.html">feedback</a></li>
+            </ul>
+          </nav>
+ </slot>
+            
+ <script src="script.js"></script>
             
         `;
 
@@ -203,3 +205,5 @@ class MyMenu extends HTMLElement {
 }
 
 customElements.define('my-menu', MyMenu);
+
+           

@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;400&family=Rye&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -24,11 +23,9 @@ html {
 }
 
 
-
-
 .first-section {
     height: 100vh;
-    background-image: linear-gradient(rgba(29, 29, 19, 0.8), rgba(29, 29, 29, 0.8)), url(imagens/contato/brasa.png);
+    background-image: linear-gradient(rgba(29, 29, 19, 0.36), rgba(29, 29, 29, 0.8)), url(imagens/contato/brasa.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,109 +56,109 @@ html {
 }
 
 
-.contact .row{
+.contact .row {
     display: flex;
     background-color: #1f1e1f;
     flex-wrap: wrap;
-    gap:1rem;
+    gap: 1rem;
 }
 
-.contact .row .map{
-    flex:1 1 45rem;
+.contact .row .map {
+    flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
 }
 
-.contact .row form{
-    flex:1 1 45rem;
-    padding:5rem 2rem;
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
     text-align: center;
 }
 
-.contact .row form h3{
+.contact .row form h3 {
     text-transform: uppercase;
     font-size: 3.5rem;
-    color:#fff;
+    color: #fff;
 }
 
-.contact .row form .inputBox{
+.contact .row form .inputBox {
     display: flex;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background:var(--bg);
-    border:var(--border);
+    background: var(--bg);
+    border: var(--border);
 }
 
-.contact .row form .inputBox span{
-    color:#fff;
+.contact .row form .inputBox span {
+    color: #fff;
     font-size: 2rem;
     padding-left: 2rem;
 }
 
-.contact .row form .inputBox input{
+.contact .row form .inputBox input {
     width: 100%;
-    padding:2rem;
+    padding: 2rem;
     font-size: 1.7rem;
-    color:#fff;
+    color: #fff;
     text-transform: none;
-    background:none;
+    background: none;
 }
 
-.blogs .box-container{
+.blogs .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
-.blogs .box-container .box{
-    border: #fff;   
+.blogs .box-container .box {
+    border: #fff;
 }
 
-.blogs .box-container .box .image{
+.blogs .box-container .box .image {
     height: 25rem;
-    overflow:hidden;
+    overflow: hidden;
     width: 100%;
 }
 
-.blogs .box-container .box .image img{
+.blogs .box-container .box .image img {
     height: 100%;
     object-fit: cover;
     width: 100%;
 }
 
-.blogs .box-container .box:hover .image img{
+.blogs .box-container .box:hover .image img {
     transform: scale(1.2);
 }
 
-.blogs .box-container .box .content{
-    padding:2rem;
+.blogs .box-container .box .content {
+    padding: 2rem;
 }
 
-.blogs .box-container .box .content .title{
+.blogs .box-container .box .content .title {
     font-size: 2.5rem;
     line-height: 1.5;
-    color:#fff;
-}
-
-.blogs .box-container .box .content .title:hover{
     color: #fff;
 }
 
-.blogs .box-container .box .content span{
+.blogs .box-container .box .content .title:hover {
+    color: #fff;
+}
+
+.blogs .box-container .box .content span {
     color: #000;
     display: block;
     padding-top: 1rem;
     font-size: 2rem;
 }
 
-.blogs .box-container .box .content p{
+.blogs .box-container .box .content p {
     font-size: 1.6rem;
     line-height: 1.8;
-    color:#ccc;
-    padding:1rem 0;
+    color: #ccc;
+    padding: 1rem 0;
 }
- 
+
 .btn {
     width: 40%;
     height: 40px;
@@ -213,7 +210,7 @@ html {
 
 /*avaliação do cliente*/
 
-.cards{
+.cards {
     padding: 40px;
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
@@ -222,7 +219,7 @@ html {
 }
 
 
-.card{
+.card {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -231,22 +228,21 @@ html {
     box-shadow: 6px 6px 10px #ffffff1e;
 }
 
-.card img{
+.card img {
     align-items: center;
     border-radius: 100px;
     width: 150px;
     padding: 5px;
 }
 
-.card p{
+.card p {
     margin-top: 20px;
     text-align: center;
     font-size: 1.8rem;
     color: #000;
 }
 
-
-.card h3{
+z .card h3 {
     text-align: center;
     color: #000000;
     margin: 2rem 0 2rem 0;
@@ -254,7 +250,71 @@ html {
     text-transform: uppercase;
 }
 
-.card h2{
+.card h2 {
     font-size: 3rem;
     color: #ffc506;
+}
+
+@media(max-width: 600px) {
+.anuncio h1 {
+    font-size: 5rem;
+    color: #ffc506;
+    margin-bottom: 1rem;
+}
+
+.anuncio h2 {
+    padding-top: 10px;
+    font-size: 3rem;
+}
+
+.anuncio h3 {
+    font-size: 3rem;
+    text-align: right;
+    margin-top: 0;
+    padding: 10px;
+}
+.cards {
+    padding: 20px; /* Reduzindo o padding para diminuir o espaçamento geral */
+    display: flex;
+    flex-wrap: wrap; /* Permitindo que os elementos se movam para a próxima linha quando não há espaço suficiente */
+    justify-content: space-around; /* Distribuindo os elementos uniformemente ao longo do eixo principal (horizontal) */
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; /* Adicionando margem para separar os cards */
+    padding: 20px; /* Reduzindo o padding dentro do card */
+    box-shadow: 6px 6px 10px #ffffff1e;
+}
+
+.card img {
+    border-radius: 100px;
+    width: 100px; /* Reduzindo o tamanho da imagem */
+    padding: 5px;
+}
+
+.card p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4rem; /* Reduzindo o tamanho da fonte */
+    color: #000;
+}
+
+.card h3 {
+    text-align: center;
+    color: #000000;
+    margin: 1rem 0; /* Reduzindo a margem superior e inferior */
+    font-size: 2rem; /* Reduzindo o tamanho da fonte */
+    text-transform: uppercase;
+}
+
+.card h2 {
+    font-size: 2rem; /* Reduzindo o tamanho da fonte */
+    color: #ffc506;
+}
+
 }

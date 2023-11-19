@@ -23,61 +23,6 @@ html {
     background-color: #1f1e1f;
 }
 
-/*Menu*/
-
-.content {
-    width: 100vw;
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1f1e1f;
-    position: fixed;
-    padding-left: 30rem;
-}
-
-.logo {
-    width: 70px;
-    height: auto;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-.logo h3 {
-    color: white;
-    font-size: 1.6rem;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-}
-
-
-.content .list-menu {
-    width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.content .list-menu li a {
-    padding: 3rem 1rem 2rem 1rem;
-    color: white;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: all 200ms ease-in;
-}
-
-.content .list-menu li a:hover {
-    background-color: #3333;
-    border-bottom: 4px solid #ffc506;
-    color: #ffc506;
-}
-
-
 /*priemira sessão*/
 
 .first-section {
@@ -162,7 +107,7 @@ html {
     justify-content: center;
 }
 
-.sobre-nos img {
+.sobre-nos .img-cozinha img {
     width: 400px;
     height: 400px;
     margin-top: 10rem;
@@ -525,12 +470,13 @@ video {
 
 
 
-
 /*responsividade*/
 
 
 @media (max-width: 1200px) {
-    
+    .main {
+        display: block;
+    }
 
     .content {
         flex-direction: column;
@@ -542,7 +488,10 @@ video {
 
     .sobre-nos img {
         width: 600px;
-        margin-left: -2px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -553,91 +502,16 @@ video {
 }
 
 @media(max-width: 768px) {
+
     html {
         font-size: 45%;
     }
 
-    .content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 40px;
-    }
-
-    .content .list-menu {
-        display: none;
-    }
-
-    .one,
-    .two,
-    .three {
-        width: 80%;
-        height: 2px;
-        background-color: white;
-        margin: 6px auto;
-        transition-duration: 0.5s;
-    }
-
-    .menu-toggle {
-        width: 30px;
-        height: 30px;
-    }
-
-    .content.on {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(30, 31, 30, 0.8);
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content.on .logo {
-        display: none;
-    }
-
-    .content.on .menu-toggle {
-        position: absolute;
-        right: 40px;
-        top: 20px;
-    }
-
-    .content.on .list-menu {
-        display: block;
-    }
-
-    .content.on .list-menu li {
-        display: flex;
-        justify-content: center;
-    }
-
-    .content.on .list-menu li a {
-        font-size: 2rem;
-    }
-
-    .content.on .menu-toggle .two {
-        opacity: 0;
-    }
-
-    .content.on .menu-toggle .one {
-        transform: rotate(45deg) translate(5px, -8px);
-    }
-
-    .content.on .menu-toggle .three {
-        transform: rotate(-45deg) translate(20px, -6px);
-    }
-
-    .itens-cardapio {
-        grid-template-columns: repeat(2, minmax(50px, 350px));
-    }
-
-    .itens-cardapio .info h4 {
-        margin-left: 12rem;
+    .conteudo-principal h1 {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 6rem;
     }
 
     .contatos-secao {
@@ -653,27 +527,71 @@ video {
     .site-footer [class^=col-] {
         margin-bottom: 30px
     }
+
+    .criteriosContainer .overlay h1 {
+        text-align: center;
+        font-size: 5rem;
+
+    }
+
+    
+.anuncio {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #ffc5066a;
+    padding-bottom: 4rem;
+}
+
+.anuncio h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.anuncio h2 {
+    font-size: 3rem;
+    padding: 6px;
+}
+
+.anuncio h3 {
+    font-size: 3rem;
+    text-align: right;
+    margin-top: 0;
+    padding: 6px;
+}
 }
 
 @media(max-width: 600px) {
     .conteudo-principal h1 {
         width: 500px;
+        margin: 0 auto;
         text-align: center;
         font-size: 4rem;
     }
+
 
     .conteudo-principal h2 {
         font-size: 2rem;
     }
 
-    .itens-cardapio {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
-    }
-
     .sobre-nos img {
         width: 400px;
-        height: 250px;
-        margin-left: 10px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .sobre-nos h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 400px;
     }
 
     .sobre-nos p {
@@ -684,6 +602,18 @@ video {
     .contatos-secao {
         width: 300px;
     }
+
+    .criteriosContainer .overlay h1 {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    .card h2 {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
 }
 
 @media(max-width: 500px) {
@@ -695,16 +625,19 @@ video {
     }
 
     .btn button {
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 100%;
+        padding: 20px;
     }
 
     .conteudo-principal h1 {
         width: 350px;
-        font-size: 3rem;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 3rem;
     }
-
 
     .conteudo-principal h2 {
         width: 200px;
@@ -726,60 +659,12 @@ video {
         margin-right: 0;
         font-weight: 600
     }
-}
 
-@media(max-width: 395px) {
+    .sobre-nos h2 {
+        font-size: 3rem;
+    }
+
     .sobre-nos img {
-        width: 250px;
-        height: auto;
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: none;
     }
-
-    .content p {
-        text-align: center;
-        width: 250px;
-    }
-
-    .itens-cardapio {
-        width: 50%;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
-    }
-
-    .itens-cardapio img {
-        width: 80%;
-        height: auto;
-    }
-
-    .itens-cardapio div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .itens-cardapio .info {
-        width: 100%;
-        height: 150px;
-    }
-
-    .itens-cardapio .info h3 {
-        grid-template-columns: 93px 150px;
-    }
-
-    .itens-cardapio .info h4 {
-        width: 50%;
-        grid-template-columns: 90px 130px;
-    }
-
-    .itens-cardapio .info .pedir {
-        width: 100%;
-        font-size: 1.5rem;
-    }
-
 }
